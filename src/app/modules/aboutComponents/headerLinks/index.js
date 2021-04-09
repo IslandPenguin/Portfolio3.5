@@ -10,6 +10,8 @@ const HeaderLinks = ({
   bodyType,
   onClickTimeline,
   onClickProject,
+  onClickAboutMe,
+  onClickEducation
 }) => {
   const [showMenu, setMenuState] = useState(false);
   const transition = useTransition(isFullScreen, null, {
@@ -27,12 +29,23 @@ const HeaderLinks = ({
     }
     // config: { delay: isFullScreen ? 600 : 0 }
   });
+
+  let transformUnderline = "translateX(77px)";
+  let underlineWidth = 37;
+  if (bodyType === landingPageBody.TIMELINE) {
+    transformUnderline = "translateX(0px)";
+    underlineWidth = 62;
+  } else if (bodyType === landingPageBody.ABOUT_ME) {
+    transformUnderline = "translateX(125px)";
+    underlineWidth = 72;
+  } else if (bodyType === landingPageBody.EDUCATION) {
+    transformUnderline = "translateX(213px)";
+    underlineWidth = 72;
+  }
+
   const springProps = useSpring({
-    transformUnderline:
-      bodyType == landingPageBody.TIMELINE
-        ? "translateX(0px)"
-        : "translateX(77px)",
-    underlineWidth: bodyType == landingPageBody.TIMELINE ? 62 : 37
+    transformUnderline: transformUnderline,
+    underlineWidth: underlineWidth,
   });
 
   return transition.map(
@@ -90,6 +103,18 @@ const HeaderLinks = ({
                 onClick={onClickProject}
               >
                 Tech
+              </div>
+              <div
+                className={styles.header_link_button}
+                onClick={onClickAboutMe}
+              >
+                About Me
+              </div>
+              <div
+                className={styles.header_link_button}
+                onClick={onClickEducation}
+              >
+                Education
               </div>
             </Div>
             <animated.div

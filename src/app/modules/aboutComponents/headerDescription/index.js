@@ -35,9 +35,9 @@ const HeaderDescription = ({
         (props => (
           <Div style={props} className={styles.user_description_container}>
             <div className={styles.user_description}>
-              Hello! Hola! <b className={styles.name}>I am Yadiel Cordero Badillo</b> 
-              .An avid enthusiast of all things tech, A relentless learner and above all a<b className={styles.name}> Problem Solver</b>.
-              {/* <br/><br/> In my spare time, I usually read or play video games but mostly i try to work on new ideas and learn. */}
+                       Hello! Hola! <b className={styles.name}>I am Yadiel Cordero Badillo</b> 
+             . An avid enthusiast of all things tech, A relentless learner and above all a <b className={styles.name} >Problem Solver</b>. 
+              <Flag code="pr" height="16" />{/* <br/><br/> In my spare time, I usually read or play video games but mostly i try to work on new ideas and learn. */}
             </div>
 
             <Div row align className={styles.user_button_container}>
@@ -59,23 +59,13 @@ const HeaderDescription = ({
                 Technologies
                 <Underline isFirstTime={isFirstTime} />
               </Div>
-              that I worked on. To learn more 
+              that I worked on.
             </Div>
             <Div
             align
                 className={styles.user_button}
                 onClick={onClickProject}
               >
-                About me 
-                <Underline isFirstTime={isFirstTime} />
-                <Flag code="pr" height="16" />
-                </Div>
-                <Div
-             align
-                className={styles.user_button}
-                onClick={onClickTimeline}
-                ></Div>
-
             <Div row align className={styles.user_button_container}>
               For more see:
               <Div
@@ -92,9 +82,10 @@ const HeaderDescription = ({
                 className={styles.user_button}
                 onClick={onClickEducation}
               >
-                Education
+                Education.
                 <Underline isFirstTime={isFirstTime} />
               </Div>
+            </Div>
             </Div>
 
             <ContactComponent className={styles.contact_container} />

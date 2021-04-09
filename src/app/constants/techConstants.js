@@ -3,12 +3,19 @@ import reactNativeIcon from 'Icons/technology/react-native-tech-icon.png';
 import androidIcon from 'Icons/technology/android-tech-icon.png';
 import laravelIcon from 'Icons/technology/laravel-tech-icon.png';
 import electronIcon from 'Icons/technology/electron-tech-icon.png';
+import kaliIcon from 'Icons/technology/kali-tech-icon.png';
+import postgreIcon from 'Icons/technology/postgre-tech-icon.png';
+import rustIcon from 'Icons/technology/rust-tech-icon.png';
+
 
 import reactBackgroundImage from 'Images/technology/react-background-image.png';
 import reactNativeBackgroundImage from 'Images/technology/react-native-background-image.png';
 import androidBackgroundImage from 'Images/technology/android-background-image.png';
 import laravelBackgroundImage from 'Images/technology/laravel-background-image.png';
 import electronBackgroundImage from 'Images/technology/electron-background-image.png';
+import rustBackgroundImage from 'Images/technology/rust-background-image.png';
+import kaliBackgroundImage from 'Images/technology/kali-background-image.png';
+import postgreBackgroundImage from 'Images/technology/postgre-background-image.png';
 
 export const techList = [
   {
@@ -59,17 +66,25 @@ export const techList = [
   {
     id: 'Kali-Linux',
     name: 'Kali-Linux',
-    firstLogo: electronIcon,
-    backgroundImage: electronBackgroundImage,
+    firstLogo: kaliIcon,
+    backgroundImage: kaliBackgroundImage,
     description: 'My first Programming Language , I have deep love for all things Python from making Offensive/Security Tools to Data Science/ML and CV Projects',
     projects: ['snapteam']
   },
   {
   id: 'Rust',
   name: 'Rust lang',
-  firstLogo: electronIcon,
-  backgroundImage: electronBackgroundImage,
+  firstLogo: rustIcon,
+  backgroundImage: rustBackgroundImage,
   description: 'My first Programming Language , I have deep love for all things Python from making Offensive/Security Tools to Data Science/ML and CV Projects',
   projects: ['snapteam']
-  }
+  },
+  {
+    id: 'Posgre',
+    name: 'Postgre SQL',
+    firstLogo: postgreIcon,
+    backgroundImage: postgreBackgroundImage,
+    description: 'My first Programming Language , I have deep love for all things Python from making Offensive/Security Tools to Data Science/ML and CV Projects',
+    projects: ['snapteam']
+    }
 ];

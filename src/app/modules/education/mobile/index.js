@@ -13,7 +13,7 @@ class EducationMobile extends Component {
     super(props);
     this.containerRef = React.createRef();
     this.state = {
-      selectedTimelineId: "nykaa",
+      selectedTimelineId: "",
       currentSlide: 0,
       projectsList: []
     }

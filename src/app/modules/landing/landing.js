@@ -141,8 +141,8 @@ class Landing extends Component {
         >
           {bodyType === landingPageBody.ABOUT_ME && (showMobile ? <AboutMeMobile updateBodyType={this.updateBodyType} /> : <AboutMe />)}
           {bodyType === landingPageBody.EDUCATION && (showMobile ? <EducationMobile updateBodyType={this.updateBodyType} /> : <Education />)}
-          {bodyType == landingPageBody.PROJECT && (showMobile ? <ProjectsMobile updateBodyType={this.updateBodyType} /> : <Projects />)}
-          {bodyType == landingPageBody.TIMELINE && (showMobile ? <TimelineMobile updateBodyType={this.updateBodyType} /> :  <Timeline />)}
+          {bodyType === landingPageBody.PROJECT && (showMobile ? <ProjectsMobile updateBodyType={this.updateBodyType} /> : <Projects />)}
+          {bodyType === landingPageBody.TIMELINE && (showMobile ? <TimelineMobile updateBodyType={this.updateBodyType} /> :  <Timeline />)}
         </Div>
       )
     )
@@ -194,6 +194,32 @@ class Landing extends Component {
       leaveAnimation = {
         opacity: 0,
         transform: "translate(-300px, 0px)"
+      };
+    } else if (bodyType === landingPageBody.ABOUT_ME) {
+      fromAnimation = {
+        opacity: 0,
+        transform: "translate(300px, 0px)"
+      };
+      enterAnimation = {
+        opacity: 1,
+        transform: "translate(0px, 0px)"
+      };
+      leaveAnimation = {
+        opacity: 0,
+        transform: "translate(-300px, 0px)"
+      };
+    } else if (bodyType === landingPageBody.EDUCATION) {
+      fromAnimation = {
+        opacity: 0,
+        transform: "translate(-300px, 0px)"
+      };
+      enterAnimation = {
+        opacity: 1,
+        transform: "translate(0px, 0px)"
+      };
+      leaveAnimation = {
+        opacity: 0,
+        transform: "translate(300px, 0px)"
       };
     }
 
@@ -255,6 +281,8 @@ class Landing extends Component {
           bodyType={bodyType}
           onClickTimeline={this.onClickTimeline}
           onClickProject={this.onClickProject}
+          onClickAboutMe={this.onClickAboutMe}
+          onClickEducation={this.onClickEducation}
         />
       </Div>
     );

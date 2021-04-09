@@ -145,7 +145,7 @@ export const projectsListValue = {
     involvement: 'Major',
     link: {
       type: 'visit',
-      value:  'https://www.youtube.com/watch?v=wOsy7b2Q-J4'
+      value:  ''
     },
     description: [
       {
@@ -337,6 +337,7 @@ export const projectsListValue = {
           'Automatically attach missing Album art to audio files',
           '2 theme implementation.',
           'Play video files with an option to listen to the audio only and switch between them.'
+          
         ]
       }
     ]

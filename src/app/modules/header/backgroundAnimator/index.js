@@ -2,7 +2,7 @@ import React, { Component, Fragment, memo } from 'react';
 import styles from './background_animator.module.scss';
 import { useSpring, animated, useTransition, config } from 'react-spring';
 import backgroundDarkDoodleFixed from 'Images/background-dark-doodle-fixed-layer.png';
-import backgroundDarkDoodleFirst from 'Images/background-dark-doodle-first-layer.mp4';
+import backgroundDarkDoodleFirst from 'Images/background-dark-doodle-first-layer.jpg';
 import backgroundDarkDoodleSecond from 'Images/background-dark-doodle-second-layer.png';
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
