@@ -28,16 +28,16 @@ const HeaderDescription = ({
       leave={{
         opacity: 0
       }}
-      config={isFirstTime ? { delay: 300 } : config.default}
+      config={isFirstTime ? { delay: 100 } : config.default}
     >
       {showDescription =>
         showDescription &&
         (props => (
           <Div style={props} className={styles.user_description_container}>
             <div className={styles.user_description}>
-                       Hello! Hola! <b className={styles.name}>I am Yadiel Cordero Badillo</b> 
-             . An avid enthusiast of all things tech, A relentless learner and above all a <b className={styles.name} >Problem Solver</b>. 
-              <Flag code="pr" height="16" />{/* <br/><br/> In my spare time, I usually read or play video games but mostly i try to work on new ideas and learn. */}
+            <center>Hello! Hola!</center><b className={styles.name}><center>I am Yadiel Cordero Badillo</center></b>
+            <p>An avid enthusiast of all things tech, a <b className={styles.name}>relentless</b> learner and above all a <b className={styles.name} >Problem Solver</b>. Welcome to my Portfolio!</p> 
+              <center><Flag code="pr" height="16" /></center>
             </div>
 
             <Div row align className={styles.user_button_container}>

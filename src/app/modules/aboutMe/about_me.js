@@ -7,6 +7,8 @@ import { Transition, Spring } from "react-spring/renderprops";
 import { random, parseNewLine } from "Common/utils";
 import { getImagePosition, getBackgroundTransition } from './about_me_helper';
 import techDoodleImage from "Images/background/Aut.OptProject.png";
+import {Fade} from "react-awesome-reveal";
+import Signature from "Images/signature.png";
 
 class AboutMe extends Component {
   constructor(props) {
@@ -81,23 +83,22 @@ class AboutMe extends Component {
             {tech => props => (
               <Div style={props} className={styles.content_container}>
                 <div style={{color: "orange", fontWeight: "bold"}} className={styles.title}>....A little bit about me</div>
-                <Div align="start" className={styles.description_container}>
+                <Div align="Right" className={styles.description_container}>
                   <div style={{color: "orange"}} className={styles.description}>
-                    A product of Rio Piedras, Puerto Rico. My obsession with creating, designing , and testing was evident at a early age.
-                    As a kid, I would use stock paper, tape and a unrelenting attitude to achieve what I envisioned. Then I met the computer.
-                    I traded paper for code and haven't looked back since. Anything is possible with a processor, direction and a programming language.
-                    
-                    In my spare time I engage in Woodworking ( check out my work in the link below), Microcontrollers and playing with my dog Leo
-                  </div>
+                <Fade><p> A product of Rio Piedras, Puerto Rico. My obsession with creating, designing , and testing was evident at a early age.</p></Fade>
+                <Fade delay={2000}><p>As a kid, I would use stock paper, tape and a unrelenting attitude to achieve what I envisioned. Then I met the computer.</p></Fade>
+                <Fade delay={4000}><p>I traded paper for code and haven't looked back since. Anything is possible with a processor, direction and a programming language.</p></Fade>
+                <Fade delay ={6000}><p>In my spare time I engage in Woodworking ( check out my work in the link below), Microcontrollers and playing with my dog Leo.</p></Fade>
+                </div>
                 <div style={{color: "orange", fontWeight: "bold"}} className={styles.title}>Enjoy your stay!</div>
                   <div style={{color: "orange"}} className={styles.description}>
-                    "One day I will find the words and they will be simple - Jack Keruoac" </div>
+                  <Fade delay ={8000}><p>"One day I will find the words and they will be simple - Jack Keruoac"</p></Fade> </div>
                 
-                    <a href="https://imgur.com/a/OWyopEb">WoodWorking Hobby</a>
-                    <a href="https://www.hackerone.com">Bug bounties I compete in</a>
-                    <a href="https://www.twitch.tv/islandpenguin">Code streaming channel</a>
-                    <a href="https://imgur.com/a/vBgP9Ix">Leo The Best Dog</a>
-                    
+                    <p><a href="https://imgur.com/a/OWyopEb"target="_blank">Woodworking Hobby</a></p>
+                    <p><a href="https://www.hackerone.com"target="_blank">Bug bounties I compete in</a></p>
+                    <p><a href="https://www.twitch.tv/islandpenguin"target="_blank">Code streaming channel</a></p>
+                    <p><a href="https://imgur.com/a/vBgP9Ix"target="_blank">Leo The Best Dog</a></p>
+                    <img src={Signature} className={styles.background_static_image} />
                 </Div>
               </Div>
             )}

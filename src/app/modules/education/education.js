@@ -6,7 +6,9 @@ import find from "lodash/find";
 import { Transition, Spring } from "react-spring/renderprops";
 import { random, parseNewLine } from "Common/utils";
 import { getImagePosition, getBackgroundTransition } from './education_helper';
-import techDoodleImage from "Images/background/background-image-nykaa.jpg";
+import techDoodleImage from "Images/favicon2.png";
+import techDoodleImage1 from "Images/island-logo-rest.png";
+import {Zoom} from "react-awesome-reveal";
 
 class Education extends Component {
   constructor(props) {
@@ -67,7 +69,8 @@ class Education extends Component {
 
     return (
       <Div row fillParent align="stretch" className={styles.timeline_container}>
-      <img src={techDoodleImage} className={styles.background_static_image} />
+        <img src={techDoodleImage} className={styles.background_static_image}/>
+      
      
 
         <Div className={styles.left_container}>
@@ -81,11 +84,24 @@ class Education extends Component {
             {tech => props => (
               <Div style={props} className={styles.content_container}>
                 <div style={{color: "orange", fontWeight: "bold"}} className={styles.title}>Certificates:</div>
-                <Div align="start" className={styles.description_container}>
-                  <div style={{color: "orange"}} className={styles.description}>
-                  comptia Network+
-                  </div>
-                  
+                <Div align="Right" className={styles.description_container}>
+                  <div style={{color: "orange"}} className={styles.description}>    
+                  <Zoom>
+                <center> <p>CompTIA...</p> </center>
+                 <p><a href="https://www.comptia.org/certifications/network"target="_blank">Network+</a></p>
+                 <a href="https://www.comptia.org/certifications/pentest"target="_blank">Pentest+</a>
+                 <a href="https://www.comptia.org/certifications/security"target="_blank">Security+</a>
+                 </Zoom>
+                 <Zoom delay={1000}>
+                 <center> <p>AWS ...</p></center>
+               <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"target="_blank">Solutions Architect </a>
+               
+                </Zoom>
+                <Zoom delay={2000}>
+                <p></p>
+                </Zoom>
+                </div>  
+             <img src={techDoodleImage1} className={styles.background_static_image}/>          
                 </Div>
               </Div>
             )}

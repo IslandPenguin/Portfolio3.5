@@ -51,7 +51,7 @@ export default class Intro extends Component {
         ref: React.createRef(),
         direction: 'bottom',
         isVisible: false,
-        nextTimeoutDuration: 1000,
+        nextTimeoutDuration: 100,
       },
     ]
   }
@@ -60,7 +60,7 @@ export default class Intro extends Component {
     animationFrameTimeout(() => {
       this.animateNext(0);
       this.setState({ showAnimationContainer: true })
-    }, 600)
+    }, 100)
   }
 
   animateNext = (index) => {

@@ -1,6 +1,13 @@
 @import '~Styles/colors.module';
 @import '~Styles/mixins.module';
 
+
+a {
+  color: #FFF;
+}
+a:hover {
+   color: #00F
+}
 .timeline_container {
   padding: 60px 0px 0px 60px;
   position: relative;
