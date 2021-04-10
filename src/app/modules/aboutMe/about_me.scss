@@ -12,6 +12,20 @@ a:hover {
   padding: 60px 0px 0px 60px;
   position: relative;
   overflow: hidden;
+  
+  .background_static_image {
+    width: 50%;
+  }
+
+  .background_signature_image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .left_container{
+    width: 50%;
+  }
 
   .background_image {
     position: absolute;
@@ -25,6 +39,10 @@ a:hover {
     object-position: left top;
     object-fit: cover;
     z-index: 0;
+  }
+
+  .description_container {
+    max-width: 90%;
   }
 
   .background_overlay {

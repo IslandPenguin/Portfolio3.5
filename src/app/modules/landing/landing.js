@@ -15,10 +15,10 @@ import responsiveBreakpoint from 'Common/hoc/responsiveBreakpoint';
 import { animationFrameTimeout } from 'Common/utils';
 import TimelineMobile from "../timeline/mobile";
 
-import AboutMe from "Modules/aboutMe/about_me";
-import AboutMeMobile from "Modules/aboutMe/mobile";
-import Education from "Modules/education/education";
-import EducationMobile from "Modules/education/mobile";
+import AboutMe from "../aboutMe/about_me";
+import AboutMeMobile from "../aboutMe/mobile";
+import Education from "../education/education";
+import EducationMobile from "../education/mobile";
 
 class Landing extends Component {
   state = {

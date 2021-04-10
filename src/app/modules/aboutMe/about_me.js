@@ -6,9 +6,9 @@ import find from "lodash/find";
 import { Transition, Spring } from "react-spring/renderprops";
 import { random, parseNewLine } from "Common/utils";
 import { getImagePosition, getBackgroundTransition } from './about_me_helper';
-import techDoodleImage from "Images/background/Aut.OptProject.png";
+import avatarImg from "Images/background/Aut.OptProject.png";
 import {Fade} from "react-awesome-reveal";
-import Signature from "Images/signature.png";
+import Signature from "Images/signature-croped.png";
 
 class AboutMe extends Component {
   constructor(props) {
@@ -69,7 +69,7 @@ class AboutMe extends Component {
 
     return (
       <Div row fillParent align="stretch" className={styles.timeline_container}>
-      <img src={techDoodleImage} className={styles.background_static_image} />
+      <img src={avatarImg} className={styles.background_static_image} />
      
 
         <Div className={styles.left_container}>
@@ -98,7 +98,7 @@ class AboutMe extends Component {
                     <p><a href="https://www.hackerone.com"target="_blank">Bug bounties I compete in</a></p>
                     <p><a href="https://www.twitch.tv/islandpenguin"target="_blank">Code streaming channel</a></p>
                     <p><a href="https://imgur.com/a/vBgP9Ix"target="_blank">Leo The Best Dog</a></p>
-                    <img src={Signature} className={styles.background_static_image} />
+                    <img src={Signature} className={styles.background_signature_image} />
                 </Div>
               </Div>
             )}

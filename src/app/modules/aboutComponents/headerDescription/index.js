@@ -64,7 +64,6 @@ const HeaderDescription = ({
             <Div
             align
                 className={styles.user_button}
-                onClick={onClickProject}
               >
             <Div row align className={styles.user_button_container}>
               For more see:
