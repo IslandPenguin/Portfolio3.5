@@ -90,15 +90,17 @@ class AboutMe extends Component {
                 <Fade delay={4000}><p>I traded paper for code and haven't looked back since. Anything is possible with a processor, direction and a programming language.</p></Fade>
                 <Fade delay ={6000}><p>In my spare time I engage in Woodworking ( check out my work in the link below), Microcontrollers and playing with my dog Leo.</p></Fade>
                 </div>
-                <div style={{color: "orange", fontWeight: "bold"}} className={styles.title}>Enjoy your stay!</div>
+                <div style={{color: "orange", fontWeight: "bold"}} className={styles.title}><center>Enjoy your stay!</center></div>
                   <div style={{color: "orange"}} className={styles.description}>
-                  <Fade delay ={8000}><p>"One day I will find the words and they will be simple - Jack Keruoac"</p></Fade> </div>
-                
+                 <center><Fade delay ={8000}><p>"One day I will find the words and they will be simple - Jack Keruoac"</p></Fade></center>
+                  </div>
+                  <center>
                     <p><a href="https://imgur.com/a/OWyopEb"target="_blank">Woodworking Hobby</a></p>
                     <p><a href="https://www.hackerone.com"target="_blank">Bug bounties I compete in</a></p>
                     <p><a href="https://www.twitch.tv/islandpenguin"target="_blank">Code streaming channel</a></p>
                     <p><a href="https://imgur.com/a/vBgP9Ix"target="_blank">Leo The Best Dog</a></p>
                     <img src={Signature} className={styles.background_static_image} />
+                    </center>
                 </Div>
               </Div>
             )}

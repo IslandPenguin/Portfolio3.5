@@ -39,7 +39,6 @@ const HeaderDescription = ({
             <p>An avid enthusiast of all things tech, a <b className={styles.name}>relentless</b> learner and above all a <b className={styles.name} >Problem Solver</b>. Welcome to my Portfolio!</p> 
               <center><Flag code="pr" height="16" /></center>
             </div>
-
             <Div row align className={styles.user_button_container}>
               Checkout my
               <Div
