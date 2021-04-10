@@ -87,13 +87,13 @@ class Education extends Component {
                 <Div align="Right" className={styles.description_container}>
                   <div style={{color: "orange"}} className={styles.description}>    
                   <Zoom>
-                <center> <p>CompTIA...</p> </center>
+                <center> <p>CompTIA</p> </center>
                  <p><a href="https://www.comptia.org/certifications/network"target="_blank">Network+</a></p>
                  <a href="https://www.comptia.org/certifications/pentest"target="_blank">Pentest+</a>
                  <a href="https://www.comptia.org/certifications/security"target="_blank">Security+</a>
                  </Zoom>
                  <Zoom delay={1000}>
-                 <center> <p>AWS ...</p></center>
+                 <center> <p>AWS </p></center>
                <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"target="_blank">Solutions Architect </a>
                
                 </Zoom>
