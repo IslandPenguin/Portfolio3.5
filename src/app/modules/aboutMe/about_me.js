@@ -8,7 +8,7 @@ import { random, parseNewLine } from "Common/utils";
 import { getImagePosition, getBackgroundTransition } from './about_me_helper';
 import avatarImg from "Images/background/Aut.OptProject.png";
 import {Fade} from "react-awesome-reveal";
-import Signature from "Images/signature-croped.png";
+import Signature from "Images/signature.png";
 
 class AboutMe extends Component {
   constructor(props) {
